@@ -59,10 +59,12 @@ nav .navbar .logo a {
     font-weight: 500;
     font-size: 35px;
     color: #ffff;
+    text-decoration: none;
 }
 
 nav.sticky .navbar .logo a {
     color: #fff;
+    text-decoration: none
 }
 
 nav .navbar .menu {
@@ -175,7 +177,7 @@ nav.sticky .menu-btn {
 .home .text-four {
     font-size: 23px;
     margin: 5px 0;
-    color: #0E2431;
+    color: #ffffff;
 }
 
 .home .button {
@@ -599,4 +601,64 @@ footer .text span a:hover {
         font-size: 50px;
         color: #4070f4;
     }
+}
+
+
+/* Animation */
+
+
+/* @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro'); */
+
+
+/* body {
+    padding: 40px;
+    background-color: #121212;
+} */
+
+h1 {
+    border-right: solid 3px rgba(0, 255, 0, .75);
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 28px;
+    color: rgba(228, 72, 72, 0.746);
+}
+
+
+/* Animation */
+
+h1 {
+    animation: animated-text 4s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
+    /* animation: typing 4.5s steps(30, end), blink-caret .5s step-end reverse;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-direction: alternate, reverse, normal; */
+}
+
+
+/* text animation */
+
+@keyframes animated-text {
+    from {
+        width: 0;
+    }
+    to {
+        width: 370px;
+    }
+}
+
+
+/* cursor animations */
+
+@keyframes animated-cursor {
+    from {
+        border-right-color: rgba(0, 255, 0, .75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+a {
+    text-decoration: none;
 }
